@@ -31,7 +31,11 @@ namespace app7
         }
         private void Switch_Toggled(object sender, ToggledEventArgs e)
         {
-            if (textUser.Text == null) return;
+            if (textUser.Text == null || textUser.Text == string.Empty)
+            {
+                switchToggle.IsToggled = false;
+                return;
+            }
             if (switchToggle.IsToggled == true)
             {
                 textUser.IsEnabled = false;
