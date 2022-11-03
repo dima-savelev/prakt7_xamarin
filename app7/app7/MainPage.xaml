@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app7.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Напоминалка" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Введите время:" FontSize="20" Margin="10,0,0,0"></Label>
+        <TimePicker x:Name="timePicker" Format="HH:mm" FontSize="40" HorizontalOptions="Center"></TimePicker>
+        <Label Text="Введите дату:"  FontSize="20" Margin="10,0,0,0"></Label>
+        <DatePicker x:Name="dataPicker" FontSize="40" HorizontalOptions="Center" Format="dd.MM.yyyy"></DatePicker>
+        <Label Text="Введите желаемое сообщение:"  FontSize="20" Margin="10,0,0,0"></Label>
+        <Entry x:Name="textUser" Margin="10,0,10,0"></Entry>
+        <Switch IsToggled="False" Toggled="Switch_Toggled" x:Name="switchToggle" HorizontalOptions="Start" Margin="10,10,0,0"></Switch>
+    </StackLayout>
+
+</ContentPage>
